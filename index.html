@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration & Dashboard</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Student Course Registration System</h1>
+
+  <!-- PART A: COURSE REGISTRATION -->
+  <section class="registration">
+    <h2>Course Registration</h2>
+
+    <form id="courseForm" >
+  <input type="text" id="studentName" placeholder="Adekoya Deborah Oluwadasola">
+
+  <input type="text" id="matricNumber" 
+         placeholder="LCU/UG/23/26088">
+
+  <input type="text" id="courseCode" 
+         placeholder="IFT 306">
+
+  <input type="text" id="courseTitle" 
+         placeholder="Integrative Programming and Technologies">
+
+  <button type="submit">Register Course</button>
+</form>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Matric Number</th>
+          <th>Course Code</th>
+          <th>Course Title</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="courseTable"></tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- PART B: DATA DASHBOARD -->
+  <section class="dashboard">
+    <h2>Country Data Dashboard</h2>
+
+    <button id="refreshBtn">Refresh Data</button>
+
+    <p id="status"></p>
+
+    <div id="countryData"></div>
+  </section>
+
+  <!-- JS FILES -->
+  <script src="js/registration.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>
